@@ -1,2 +1,3 @@
-<td><%= email.object %></td>
-<td><%= email.body %></td>
+<th scope="row">votre mail :</th>
+<td><%= link_to "#{email.object}", email_path(email.id), :class => 'home_links', :style => 'color: black', remote: true%></td>
+<td><div id = "email_show"></div></td>

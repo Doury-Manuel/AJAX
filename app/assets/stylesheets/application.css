@@ -1,0 +1,9 @@
+body {
+    background-image: url("https://user-images.githubusercontent.com/5346876/53448021-792f9900-39e4-11e9-8571-64262b4cab10.png");
+}
+
+.home_links:hover{
+    color: blueviolet;
+    font-size: 18px;
+    
+  }

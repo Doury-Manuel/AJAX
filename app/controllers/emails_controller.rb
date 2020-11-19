@@ -12,6 +12,10 @@ class EmailsController < ApplicationController
   # GET /emails/1.json
   def show
     @email = Email.find(params[:id])
+    respond_to do |format|
+      format.html {  }
+      format.js { }
+  end
   end
 
   # GET /emails/new
@@ -58,7 +62,7 @@ class EmailsController < ApplicationController
     @email.destroy
     respond_to do |format|
       format.html { redirect_to emails_url, notice: 'Email was successfully destroyed.' }
-      format.json { head :no_content }
+      format.js { }
     end
   end
 

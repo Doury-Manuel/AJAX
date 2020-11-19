@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TodolistApp</title>
+    <title>Gmail Like</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,7 +13,21 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-   
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Gmail_Like</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+    <div class="container text-center">
+      <h1 class="display-5">Bienvenu sur Gmail ! (ou presque)</h1>
+      <p>Je sais que ça n'a rien a voir, mais si jamais vous aimez les photos, cliquez sur le bouton</p>
+      <p><a class="btn btn-primary btn-lg" href="https://www.facebook.com/Popoolos-Photo-111497400615678" target = "blank" role="button">Voir des supers photos </a></p>
+    </div>
+  </div>
+
     <%= yield %>
   </body>
 </html>
