@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-center">Emails</h1><br>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Object</th>
+      <th scope="col">Body</th>
+    </tr>
+  </thead>
+  <tbody id="email-list">
+    <% @emails.each do |email| %>
+      <tr>
+        <td><%= email.object %></td>
+        <td><%= email.body %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<button><%= link_to "Recevoir un Email",  emails_path, method: :post, remote: true%>  </button>
