@@ -82,5 +82,5 @@ production:
   <<: *default
   adapter: postgresql
   database: todolist-app_production
-  username: todolist-app
+  username: 
   password: <%= ENV['TODOLIST-APP_DATABASE_PASSWORD'] %>
